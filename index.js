@@ -444,7 +444,7 @@ document.getElementById('card-8').addEventListener('click', function () {
     console.log(name);
 
 
-    p.innerHTML = `${count} . Full Jersey Set`;
+    p.innerHTML = `${count} . Children play`;
     output.appendChild(p);
 
     sum = parseFloat(sum) + parseFloat(c8Price);
