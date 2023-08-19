@@ -25,6 +25,7 @@ document.getElementById('card-1').addEventListener('click', function () {
     output.appendChild(p);
 
     sum = parseFloat(sum) + parseFloat(c1Price);
+    sum=sum.toFixed(2);
     console.log(sum);
 
     const SumPrice = document.getElementById('sum-p');
@@ -81,6 +82,7 @@ document.getElementById('card-2').addEventListener('click', function () {
     output.appendChild(p);
 
     sum = parseFloat(sum) + parseFloat(c2Price);
+    sum=sum.toFixed(2);
     console.log(sum);
 
     const SumPrice = document.getElementById('sum-p');
@@ -137,6 +139,7 @@ document.getElementById('card-3').addEventListener('click', function () {
     output.appendChild(p);
 
     sum = parseFloat(sum) + parseFloat(c3Price);
+    sum=sum.toFixed(2);
     console.log(sum);
 
     const SumPrice = document.getElementById('sum-p');
@@ -202,6 +205,7 @@ document.getElementById('card-4').addEventListener('click', function () {
     output.appendChild(p);
 
     sum = parseFloat(sum) + parseFloat(c4Price);
+    sum=sum.toFixed(2);
     console.log(sum);
 
     const SumPrice = document.getElementById('sum-p');
@@ -264,6 +268,7 @@ document.getElementById('card-5').addEventListener('click', function () {
     output.appendChild(p);
 
     sum = parseFloat(sum) + parseFloat(c5Price);
+    sum=sum.toFixed(2);
     console.log(sum);
 
     const SumPrice = document.getElementById('sum-p');
@@ -299,6 +304,8 @@ document.getElementById('card-5').addEventListener('click', function () {
 
 
 })
+
+
 
 
 // card 6
@@ -322,6 +329,185 @@ document.getElementById('card-6').addEventListener('click', function () {
     output.appendChild(p);
 
     sum = parseFloat(sum) + parseFloat(c6Price);
+    sum=sum.toFixed(2);
+    console.log(sum);
+
+    const SumPrice = document.getElementById('sum-p');
+    SumPrice.innerHTML = sum;
+
+
+    total = sum;
+
+    const lastPrice = document.getElementById('last-p');
+    lastPrice.innerHTML = total;
+
+
+
+    const btnPurchase = document.getElementById('btn-Purchase');
+
+    if (sum > 0) {
+        btnPurchase.removeAttribute('disabled');
+    } else {
+        btnPurchase.setAttribute('disabled', 'true');
+    }
+
+
+
+
+    const btnApply = document.getElementById('btn-apply');
+
+    if (sum >= 200) {
+        btnApply.removeAttribute('disabled');
+    } else {
+        btnApply.setAttribute('disabled', 'true');
+    }
+
+
+
+})
+
+
+
+// card 7
+document.getElementById('card-7').addEventListener('click', function () {
+    console.log("card 7 click");
+
+    count++;
+
+    const c7Price = document.getElementById('card-7-price').innerText;
+    console.log(c7Price);
+
+    const output = document.getElementById('output');
+    const p = document.createElement('p');
+
+    const name = document.getElementsByClassName('card7-name');
+
+    console.log(name);
+
+
+    p.innerHTML = `${count} . Single Relax Chair`;
+    output.appendChild(p);
+
+    sum = parseFloat(sum) + parseFloat(c7Price);
+    console.log(sum);
+
+    const SumPrice = document.getElementById('sum-p');
+    SumPrice.innerHTML = sum;
+
+
+    total = sum;
+
+    const lastPrice = document.getElementById('last-p');
+    lastPrice.innerHTML = total;
+
+
+
+    const btnPurchase = document.getElementById('btn-Purchase');
+
+    if (sum > 0) {
+        btnPurchase.removeAttribute('disabled');
+    } else {
+        btnPurchase.setAttribute('disabled', 'true');
+    }
+
+
+
+
+    const btnApply = document.getElementById('btn-apply');
+
+    if (sum >= 200) {
+        btnApply.removeAttribute('disabled');
+    } else {
+        btnApply.setAttribute('disabled', 'true');
+    }
+
+
+
+})
+
+
+
+// card 8
+document.getElementById('card-8').addEventListener('click', function () {
+    console.log("card 8 click");
+
+    count++;
+
+    const c8Price = document.getElementById('card-8-price').innerText;
+    console.log(c8Price);
+
+    const output = document.getElementById('output');
+    const p = document.createElement('p');
+
+    const name = document.getElementsByClassName('card8-name');
+
+    console.log(name);
+
+
+    p.innerHTML = `${count} . Full Jersey Set`;
+    output.appendChild(p);
+
+    sum = parseFloat(sum) + parseFloat(c8Price);
+    sum=sum.toFixed(2);
+    console.log(sum);
+
+    const SumPrice = document.getElementById('sum-p');
+    SumPrice.innerHTML = sum;
+
+
+    total = sum;
+
+    const lastPrice = document.getElementById('last-p');
+    lastPrice.innerHTML = total;
+
+
+
+    const btnPurchase = document.getElementById('btn-Purchase');
+
+    if (sum > 0) {
+        btnPurchase.removeAttribute('disabled');
+    } else {
+        btnPurchase.setAttribute('disabled', 'true');
+    }
+
+
+
+
+    const btnApply = document.getElementById('btn-apply');
+
+    if (sum >= 200) {
+        btnApply.removeAttribute('disabled');
+    } else {
+        btnApply.setAttribute('disabled', 'true');
+    }
+
+
+
+})
+
+
+// card 9
+document.getElementById('card-9').addEventListener('click', function () {
+    console.log("card 9 click");
+
+    count++;
+
+    const c9Price = document.getElementById('card-9-price').innerText;
+    console.log(c9Price);
+
+    const output = document.getElementById('output');
+    const p = document.createElement('p');
+
+    const name = document.getElementsByClassName('card9-name');
+
+    console.log(name);
+
+
+    p.innerHTML = `${count} . Flexible Sofa`;
+    output.appendChild(p);
+
+    sum = parseFloat(sum) + parseFloat(c9Price);
+    sum=sum.toFixed(2);
     console.log(sum);
 
     const SumPrice = document.getElementById('sum-p');
@@ -365,7 +551,6 @@ document.getElementById('card-6').addEventListener('click', function () {
 
 
 
-
 // btn-apply
 
 document.getElementById('btn-apply').addEventListener('click', function () {
@@ -380,6 +565,7 @@ document.getElementById('btn-apply').addEventListener('click', function () {
         const discount = document.getElementById('discount');
 
         let x = (20/100)*sum;
+        x=x.toFixed(2)
         console.log(x);
 
         discount.innerHTML = x;
@@ -389,7 +575,7 @@ document.getElementById('btn-apply').addEventListener('click', function () {
 
 
         const lastPrice = document.getElementById('last-p');
-        lastPrice.innerHTML = sum-x;
+        lastPrice.innerHTML = (sum-x).toFixed(2);
 
     }
 })
