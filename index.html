@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Summer Sale</title>
+    <title>fake Summer Sale</title>
 </head>
 
 <body>
@@ -228,7 +228,31 @@
                 <p>Total : <span id="last-p">00</span>$</p>
 
 
-                <button id="btn-Purchase" class="btn   mt-[50px] w-[80%] bg-[#e527b2] " disabled>Make Purchase</button>
+
+                <!-- Open the modal using ID.showModal() method -->
+                <button id="btn-Purchase" class="btn  mt-[50px] w-[80%] bg-[#e527b2]"disabled
+                    onclick="my_modal_2.showModal()">open modal</button>
+                <dialog id="my_modal_2" class="modal">
+                    <form method="dialog" class="modal-box p-[10px] lg:p-[60px]">
+                        <div class="flex justify-center items-center">
+                            <img class="" src="./images/congo.png" alt="">
+                        </div>
+                        
+                        <h3 class="font-bold text-[40px] ">Congratulations</h3>
+                        <p class="py-4">Your Purchase the product</p>
+                        <div class="modal-action flex justify-center">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button id="btn-go-home" class="btn bg-[#e527b2] ">Go Home</button>
+                        </div>
+                    </form>
+                </dialog>
+
+
+
+
+
+
+
 
             </div>
 
@@ -236,6 +260,9 @@
 
     </div>
 
+
+
+   
 
 
 

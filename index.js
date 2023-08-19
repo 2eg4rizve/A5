@@ -205,8 +205,8 @@ document.getElementById('btn-apply').addEventListener('click', function () {
 })
 
 
-// btn-Purchase
+// btn-go-home
 
-document.getElementById('btn-Purchase').addEventListener('click',function(){
+document.getElementById('btn-go-home').addEventListener('click',function(){
     location.reload();
 })
