@@ -43,7 +43,13 @@ document.getElementById('card-1').addEventListener('click', function () {
         btnPurchase.setAttribute('disabled', 'true');
     }
 
+    const btnApply = document.getElementById('btn-apply');
 
+    if (total >= 200) {
+        btnApply.removeAttribute('disabled');
+    } else {
+        btnApply.setAttribute('disabled', 'true');
+    }
 
 
 
@@ -95,7 +101,13 @@ document.getElementById('card-2').addEventListener('click', function () {
         btnPurchase.setAttribute('disabled', 'true');
     }
 
+    const btnApply = document.getElementById('btn-apply');
 
+    if (total >= 200) {
+        btnApply.removeAttribute('disabled');
+    } else {
+        btnApply.setAttribute('disabled', 'true');
+    }
 
 
 
@@ -147,6 +159,15 @@ document.getElementById('card-3').addEventListener('click', function () {
     }
 
 
+
+
+    const btnApply = document.getElementById('btn-apply');
+
+    if (total >= 200) {
+        btnApply.removeAttribute('disabled');
+    } else {
+        btnApply.setAttribute('disabled', 'true');
+    }
 
 
 
