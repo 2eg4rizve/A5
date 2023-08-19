@@ -176,6 +176,196 @@ document.getElementById('card-3').addEventListener('click', function () {
 
 
 
+
+
+
+
+
+// card 4
+document.getElementById('card-4').addEventListener('click', function () {
+    console.log("card 4 click");
+
+    count++;
+
+    const c4Price = document.getElementById('card-4-price').innerText;
+    console.log(c4Price);
+
+    const output = document.getElementById('output');
+    const p = document.createElement('p');
+
+    const name = document.getElementsByClassName('card4-name');
+
+    console.log(name);
+
+
+    p.innerHTML = `${count} . Sports Back Cap`;
+    output.appendChild(p);
+
+    sum = parseFloat(sum) + parseFloat(c4Price);
+    console.log(sum);
+
+    const SumPrice = document.getElementById('sum-p');
+    SumPrice.innerHTML = sum;
+
+
+    total = sum;
+
+    const lastPrice = document.getElementById('last-p');
+    lastPrice.innerHTML = total;
+
+
+
+    const btnPurchase = document.getElementById('btn-Purchase');
+
+    if (sum > 0) {
+        btnPurchase.removeAttribute('disabled');
+    } else {
+        btnPurchase.setAttribute('disabled', 'true');
+    }
+
+
+
+
+    const btnApply = document.getElementById('btn-apply');
+
+    if (sum >= 200) {
+        btnApply.removeAttribute('disabled');
+    } else {
+        btnApply.setAttribute('disabled', 'true');
+    }
+
+
+
+})
+
+
+
+
+
+
+// card 5
+document.getElementById('card-5').addEventListener('click', function () {
+    console.log("card 5 click");
+
+    count++;
+
+    const c5Price = document.getElementById('card-5-price').innerText;
+    console.log(c5Price);
+
+    const output = document.getElementById('output');
+    const p = document.createElement('p');
+
+    const name = document.getElementsByClassName('card5-name');
+
+    console.log(name);
+
+
+    p.innerHTML = `${count} . Full Jersey Set`;
+    output.appendChild(p);
+
+    sum = parseFloat(sum) + parseFloat(c5Price);
+    console.log(sum);
+
+    const SumPrice = document.getElementById('sum-p');
+    SumPrice.innerHTML = sum;
+
+
+    total = sum;
+
+    const lastPrice = document.getElementById('last-p');
+    lastPrice.innerHTML = total;
+
+
+
+    const btnPurchase = document.getElementById('btn-Purchase');
+
+    if (sum > 0) {
+        btnPurchase.removeAttribute('disabled');
+    } else {
+        btnPurchase.setAttribute('disabled', 'true');
+    }
+
+
+
+
+    const btnApply = document.getElementById('btn-apply');
+
+    if (sum >= 200) {
+        btnApply.removeAttribute('disabled');
+    } else {
+        btnApply.setAttribute('disabled', 'true');
+    }
+
+
+
+})
+
+
+// card 6
+document.getElementById('card-6').addEventListener('click', function () {
+    console.log("card 6 click");
+
+    count++;
+
+    const c6Price = document.getElementById('card-6-price').innerText;
+    console.log(c6Price);
+
+    const output = document.getElementById('output');
+    const p = document.createElement('p');
+
+    const name = document.getElementsByClassName('card6-name');
+
+    console.log(name);
+
+
+    p.innerHTML = `${count} . Sports cates`;
+    output.appendChild(p);
+
+    sum = parseFloat(sum) + parseFloat(c6Price);
+    console.log(sum);
+
+    const SumPrice = document.getElementById('sum-p');
+    SumPrice.innerHTML = sum;
+
+
+    total = sum;
+
+    const lastPrice = document.getElementById('last-p');
+    lastPrice.innerHTML = total;
+
+
+
+    const btnPurchase = document.getElementById('btn-Purchase');
+
+    if (sum > 0) {
+        btnPurchase.removeAttribute('disabled');
+    } else {
+        btnPurchase.setAttribute('disabled', 'true');
+    }
+
+
+
+
+    const btnApply = document.getElementById('btn-apply');
+
+    if (sum >= 200) {
+        btnApply.removeAttribute('disabled');
+    } else {
+        btnApply.setAttribute('disabled', 'true');
+    }
+
+
+
+})
+
+
+
+
+
+
+
+
+
 // btn-apply
 
 document.getElementById('btn-apply').addEventListener('click', function () {
