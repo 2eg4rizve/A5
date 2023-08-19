@@ -6,18 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>fake Summer Sale</title>
+    <title>Summer Sale</title>
 </head>
 
 <body>
 
+    <section class="bg-[#F9F6E2;]">
+        
+        <div class="max-w-screen-xl mx-auto">
+            <div class=" flex flex-col  md:flex-row border-[2px] border-[red] gap-[50px] md:gap-0">
+                <div class="flex-1 text-center">
+                    <p class="mt-[30%] text-[20px] text-center font-semibold">---SALE FEVER---</p>
+                    
+                    <p class="text-[35px] font-bold mt-[10px]">Purchase TK 200 or</p>
+                    <p class="text-[35px] font-bold">above & get 20% off</p>
+                     
+                    <div class="flex gap-5 justify-center mt-[30px] items-center">
+                        <p class="font-medium text-[20px]">Use Promo Code</p>
+                        <p class="bg-[#E527B2] text-white px-[15px] py-[10px] rounded-[10px]">SELL200</p>
+                    </div>
+                    
+    
+                </div>
+                <div class="flex-1">
+                    <img src="./images/Summer 1.png" alt="" srcset="">
+    
+                </div>
+    
+            </div>
+        </div>
 
-    <div class="max-w-screen-xl mx-auto ">
-        <div class="flex justify-between gap-[50px]">
+    </section>
+
+
+    <div class="max-w-screen-xl mx-auto mt-[100px] border-[2px] border-[blue]">
+        <div class=" justify-between flex flex-col  md:flex-row  gap-[50px]">
 
 
             <!-- all cards -->
-            <div class="w-[80%] bg-[#F8F8F8;]">
+            <div class="w-[97%] md:w-[80%] bg-[#F8F8F8;]">
 
                 <!-- Kitchenware -->
                 <div>
@@ -402,12 +429,12 @@
             </div>
 
             <!-- price list -->
-            <div class="w-[300px] bg-indigo-300 text-center ">
+            <div class="w-[97%] md:w-[300px] bg-indigo-300 text-center border-[2px] border-[green]">
 
                 <div class="mt-[40px]">
                     <p class="mb-[20px] font-bold text-[25px]">Have coupon?</p>
                     <input id="apply-text" class="h-[45px] p-[5px]" placeholder="Coupon code" type="text">
-                    <button id="btn-apply" class="btn  bg-[#e527b2] " disabled>Apply</button>
+                    <button id="btn-apply" class="btn  bg-[#e527b2] font-black" disabled>Apply</button>
 
                 </div>
 
@@ -422,14 +449,14 @@
 
 
                 <!-- Open the modal using ID.showModal() method -->
-                <button id="btn-Purchase" class="btn  mt-[50px] w-[80%] bg-[#e527b2]"disabled
+                <button id="btn-Purchase" class="btn  mt-[50px] w-[80%] bg-[#e527b2] font-black" disabled
                     onclick="my_modal_2.showModal()">Make Purchase</button>
                 <dialog id="my_modal_2" class="modal">
                     <form method="dialog" class="modal-box p-[10px] lg:p-[60px]">
                         <div class="flex justify-center items-center">
                             <img class="" src="./images/congo.png" alt="">
                         </div>
-                        
+
                         <h3 class="font-bold text-[40px] ">Congratulations</h3>
                         <p class="py-4">Your Purchase the product</p>
                         <div class="modal-action flex justify-center">
@@ -454,7 +481,7 @@
 
 
 
-   
+
 
 
 
