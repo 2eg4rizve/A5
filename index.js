@@ -203,3 +203,10 @@ document.getElementById('btn-apply').addEventListener('click', function () {
 
     }
 })
+
+
+// btn-Purchase
+
+document.getElementById('btn-Purchase').addEventListener('click',function(){
+    location.reload();
+})
