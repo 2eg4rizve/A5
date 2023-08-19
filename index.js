@@ -37,7 +37,7 @@ document.getElementById('card-1').addEventListener('click', function () {
 
     const btnPurchase = document.getElementById('btn-Purchase');
 
-    if (total > 0) {
+    if (sum > 0) {
         btnPurchase.removeAttribute('disabled');
     } else {
         btnPurchase.setAttribute('disabled', 'true');
@@ -45,7 +45,7 @@ document.getElementById('card-1').addEventListener('click', function () {
 
     const btnApply = document.getElementById('btn-apply');
 
-    if (total >= 200) {
+    if (sum >= 200) {
         btnApply.removeAttribute('disabled');
     } else {
         btnApply.setAttribute('disabled', 'true');
@@ -95,7 +95,7 @@ document.getElementById('card-2').addEventListener('click', function () {
 
     const btnPurchase = document.getElementById('btn-Purchase');
 
-    if (total > 0) {
+    if (sum > 0) {
         btnPurchase.removeAttribute('disabled');
     } else {
         btnPurchase.setAttribute('disabled', 'true');
@@ -103,7 +103,7 @@ document.getElementById('card-2').addEventListener('click', function () {
 
     const btnApply = document.getElementById('btn-apply');
 
-    if (total >= 200) {
+    if (sum >= 200) {
         btnApply.removeAttribute('disabled');
     } else {
         btnApply.setAttribute('disabled', 'true');
@@ -152,7 +152,7 @@ document.getElementById('card-3').addEventListener('click', function () {
 
     const btnPurchase = document.getElementById('btn-Purchase');
 
-    if (total > 0) {
+    if (sum > 0) {
         btnPurchase.removeAttribute('disabled');
     } else {
         btnPurchase.setAttribute('disabled', 'true');
@@ -163,7 +163,7 @@ document.getElementById('card-3').addEventListener('click', function () {
 
     const btnApply = document.getElementById('btn-apply');
 
-    if (total >= 200) {
+    if (sum >= 200) {
         btnApply.removeAttribute('disabled');
     } else {
         btnApply.setAttribute('disabled', 'true');
@@ -171,4 +171,35 @@ document.getElementById('card-3').addEventListener('click', function () {
 
 
 
+})
+
+
+
+
+// btn-apply
+
+document.getElementById('btn-apply').addEventListener('click', function () {
+
+    const text = document.getElementById('apply-text').value;
+
+    console.log("Apply-Btn Click");
+    console.log(text);
+
+    if (text === "SELL200") {
+
+        const discount = document.getElementById('discount');
+
+        let x = (20/100)*sum;
+        console.log(x);
+
+        discount.innerHTML = x;
+
+
+
+
+
+        const lastPrice = document.getElementById('last-p');
+        lastPrice.innerHTML = sum-x;
+
+    }
 })
