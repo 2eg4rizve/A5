@@ -405,24 +405,25 @@
             <div class="w-[300px] bg-indigo-300 text-center ">
 
                 <div class="mt-[40px]">
-                    <input id="apply-text" class="h-[45px]" type="text">
-                    <button id="btn-apply" class="btn btn-success bg-[#e527b2]" disabled>Apply</button>
+                    <p class="mb-[20px] font-bold text-[25px]">Have coupon?</p>
+                    <input id="apply-text" class="h-[45px] p-[5px]" placeholder="Coupon code" type="text">
+                    <button id="btn-apply" class="btn  bg-[#e527b2] " disabled>Apply</button>
 
                 </div>
 
-                <div id="output">
+                <div id="output" class="mt-[30px] font-bold">
 
                 </div>
 
-                <p class="mt-[50px]">Sum price : <span id="sum-p">00</span> TK</p>
-                <p>Discount : <span id="discount">00</span> TK</p>
-                <p>Total : <span id="last-p">00</span> TK</p>
+                <p class="mt-[50px] font-bold">Sum price : <span id="sum-p">00</span> TK</p>
+                <p class="font-bold">Discount : <span id="discount">00</span> TK</p>
+                <p class="font-bold">Total : <span id="last-p">00</span> TK</p>
 
 
 
                 <!-- Open the modal using ID.showModal() method -->
                 <button id="btn-Purchase" class="btn  mt-[50px] w-[80%] bg-[#e527b2]"disabled
-                    onclick="my_modal_2.showModal()">open modal</button>
+                    onclick="my_modal_2.showModal()">Make Purchase</button>
                 <dialog id="my_modal_2" class="modal">
                     <form method="dialog" class="modal-box p-[10px] lg:p-[60px]">
                         <div class="flex justify-center items-center">
